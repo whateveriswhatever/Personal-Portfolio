@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div
-          className="h-screen max-h-screen website-background-black"
+          className="h-screen max-h-screen website-background-black text-white"
           style={{ backgroundColor: "#0c0c0c" }}
         >
           {children}

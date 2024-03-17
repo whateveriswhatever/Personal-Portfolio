@@ -1,5 +1,5 @@
 import React from "react";
-import Details from "./Detais";
+import Details from "./Details";
 
 const Main = () => {
   return (
