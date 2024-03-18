@@ -16,6 +16,26 @@ const config: Config = {
       colors: {
         "website-background-black": "#0c0c0c",
       },
+      animation: {
+        custom:
+          "custome-animation-for-sections .6s cubic-bezier(0.2, 0.6, 0.2, 0.1) forwards",
+      },
+      screens: {
+        max767px: "767px",
+      },
+      spacing: {
+        "5%": "5%",
+        "75%": "75%",
+        "10%": "10%",
+      },
+      zIndex: {
+        "999": "999",
+      },
+    },
+  },
+  variants: {
+    extends: {
+      animation: ["hover", "focus"],
     },
   },
   plugins: [],

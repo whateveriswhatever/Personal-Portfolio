@@ -1,7 +1,11 @@
+import PersonalLogo from "./{components}/PersonalLogo";
+
 const About: React.FC = () => {
   return (
     <div>
-      <h2>About Me or Us</h2>
+      <div className="" id="logo">
+        <PersonalLogo />
+      </div>
     </div>
   );
 };

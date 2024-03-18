@@ -8,6 +8,7 @@ type ContentsParam = {
   nextParams: string;
   prevContent: string;
   nextContent: string;
+  customColor: string;
 };
 
 const Details = () => {
@@ -19,6 +20,7 @@ const Details = () => {
           nextParams="/about"
           prevContent="Hey."
           nextContent="About"
+          customColor=""
         />
 
         <Content
@@ -26,6 +28,7 @@ const Details = () => {
           nextParams="/work"
           prevContent="I'm"
           nextContent="Work"
+          customColor="rgb(255, 29, 72)"
         />
 
         <Content
@@ -33,6 +36,7 @@ const Details = () => {
           nextParams="/contact"
           prevContent="Duy"
           nextContent="Contact"
+          customColor="rgb(255, 29, 72)"
         />
       </h1>
     </div>
@@ -46,6 +50,7 @@ const Content: React.FC<ContentsParam> = ({
   nextParams,
   prevContent,
   nextContent,
+  customColor,
 }) => {
   const [modifiedContext, setModifiedContext] = useState(prevContent);
   const [isHovered, setIsHovered] = useState(false);
@@ -58,7 +63,10 @@ const Content: React.FC<ContentsParam> = ({
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* {isHovered ? nextContent : prevContent} */}
-        <div className="text-neutral-50">
+        <div
+          className="text-neutral-50 custome-animation-for-sections text-8xl transition duration-300 ease-in-out font-semibold"
+          style={{ marginLeft: isHovered ? "2.4rem" : "0", color: customColor }}
+        >
           {isHovered ? nextContent : prevContent}
         </div>
       </a>
