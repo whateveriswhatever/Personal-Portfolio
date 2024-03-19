@@ -17,9 +17,15 @@ const config: Config = {
         "website-background-black": "#0c0c0c",
       },
       animation: {
-        custom:
-          "custome-animation-for-sections .6s cubic-bezier(0.2, 0.6, 0.2, 0.1) forwards",
+        "slow-move": "backtrack duration-500",
       },
+      transitionTimingFunction: {
+        backtrack: "cubic-bezier(0.2, 0.6, 0.2, 1)",
+      },
+      transitionDuration: {
+        "0.6s": "0.6s",
+      },
+
       screens: {
         max767px: "767px",
       },
@@ -31,6 +37,18 @@ const config: Config = {
       zIndex: {
         "999": "999",
       },
+    },
+    fontFamily: {
+      semibold: ["Semibold"],
+    },
+    lineHeight: {
+      h1LineHeight: "110%",
+    },
+    letterSpacing: {
+      negative2px: "-2px",
+    },
+    fontSize: {
+      h1FontSize: "18vmin",
     },
   },
   variants: {
