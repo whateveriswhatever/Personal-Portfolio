@@ -14,7 +14,7 @@ type ContentsParam = {
 const Details = () => {
   return (
     <div className="absolute h-full flex items-center">
-      <h1>
+      <h1 className="font-semibold fixed leading-h1LineHeight tracking-negative2px text-h1FontSize">
         <Content
           prevParams=""
           nextParams="/about"
@@ -64,7 +64,7 @@ const Content: React.FC<ContentsParam> = ({
       >
         {/* {isHovered ? nextContent : prevContent} */}
         <div
-          className="text-neutral-50 custome-animation-for-sections text-8xl transition duration-300 ease-in-out font-semibold"
+          className="text-neutral-50 text-8xl font-semibold hover:animate-[slow-move] hover:duration-[0.6s]"
           style={{ marginLeft: isHovered ? "2.4rem" : "0", color: customColor }}
         >
           {isHovered ? nextContent : prevContent}
