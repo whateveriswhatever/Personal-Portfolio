@@ -6,7 +6,7 @@ const PersonalLogo = () => {
   const [linkContent, setLinkContent] = useState("DL");
   return (
     <div className="float-right">
-      <div className="max767px:top-[5%] max767px:left-[75%] fixed z-[999]">
+      <div className="">
         <a href="#">{linkContent}</a>
       </div>
     </div>

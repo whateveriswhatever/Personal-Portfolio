@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function AboutPageLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {

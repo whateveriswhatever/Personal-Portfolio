@@ -24,16 +24,24 @@ const config: Config = {
       },
       transitionDuration: {
         "0.6s": "0.6s",
+        "0.4s": "0.4s",
       },
 
       screens: {
         max767px: "767px",
         max1280px: "1280px",
+        phone: "280px",
+        tablet: "640px",
+        laptop: "1024px",
+        desktop: "1280px",
       },
       spacing: {
         "5%": "5%",
         "75%": "75%",
         "10%": "10%",
+        "21.5em": "21.5em",
+        "86%": "86%",
+        "213.891px": "213.891px",
       },
       zIndex: {
         "999": "999",
