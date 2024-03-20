@@ -64,8 +64,13 @@ const Content: React.FC<ContentsParam> = ({
       >
         {/* {isHovered ? nextContent : prevContent} */}
         <div
-          className="text-neutral-50 text-8xl font-semibold hover:animate-[slow-move] hover:duration-[0.6s]"
-          style={{ marginLeft: isHovered ? "2.4rem" : "0", color: customColor }}
+          className="text-neutral-50 hover:animate-[slow-move] hover:duration-[0.6s]"
+          style={{
+            marginLeft: isHovered ? "2.4rem" : "0",
+            color: customColor,
+            fontSize: "calc(1em + 1vw)",
+            fontFamily: "Semibold",
+          }}
         >
           {isHovered ? nextContent : prevContent}
         </div>
