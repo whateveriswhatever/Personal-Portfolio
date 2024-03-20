@@ -46,6 +46,9 @@ const config: Config = {
       zIndex: {
         "999": "999",
       },
+      inset: {
+        "10%": "10%",
+      },
     },
     fontFamily: {
       semibold: ["Semibold"],
