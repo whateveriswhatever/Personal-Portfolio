@@ -28,6 +28,7 @@ const config: Config = {
 
       screens: {
         max767px: "767px",
+        max1280px: "1280px",
       },
       spacing: {
         "5%": "5%",
