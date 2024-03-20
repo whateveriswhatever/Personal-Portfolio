@@ -18,6 +18,8 @@ const config: Config = {
       },
       animation: {
         "slow-move": "backtrack duration-500",
+        // "come-up": "come-up backtrack duration-[0.6s]",
+        "come-up": "come-up 0.7s ease-in ",
       },
       transitionTimingFunction: {
         backtrack: "cubic-bezier(0.2, 0.6, 0.2, 1)",
@@ -42,12 +44,26 @@ const config: Config = {
         "21.5em": "21.5em",
         "86%": "86%",
         "213.891px": "213.891px",
+        "35vh": "35vh",
+        "30vh": "30vh",
       },
       zIndex: {
         "999": "999",
       },
       inset: {
         "10%": "10%",
+      },
+      keyframes: {
+        "come-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30vh)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0%)",
+          },
+        },
       },
     },
     fontFamily: {
