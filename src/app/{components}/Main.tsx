@@ -3,7 +3,7 @@ import Details from "./Details";
 
 const Main = () => {
   return (
-    <div className="max-w-80" style={{ margin: "0 auto" }}>
+    <div className="max-w-80" style={{ margin: "0 auto", maxWidth: "20rem" }}>
       <Details />
     </div>
   );

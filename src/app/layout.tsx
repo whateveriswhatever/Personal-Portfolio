@@ -20,10 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={inter.className}
+        style={{ overflow: "hidden", backgroundColor: "#0c0c0c" }}
+      >
         <div
           className="h-screen max-h-screen website-background-black text-white p-0 m-0"
-          style={{ backgroundColor: "#0c0c0c", fontSize: "calc(1em + 1vw)" }}
+          style={{
+            backgroundColor: "#0c0c0c",
+            fontSize: "calc(1em + 1vw)",
+            height: "100vh",
+            maxHeight: "100vh",
+          }}
         >
           {children}
         </div>
