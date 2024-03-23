@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "website-background-black": "#0c0c0c",
+        "rose-color": "rgb(255, 29, 72)",
       },
       animation: {
         "slow-move": "backtrack duration-500",
